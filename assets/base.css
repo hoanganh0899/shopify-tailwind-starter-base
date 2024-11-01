@@ -607,6 +607,13 @@ details > * {
 .underlined-link,
 .customer a {
   color: rgba(var(--color-link), var(--alpha-link));
+  background: #F7921F;
+  text-decoration: none;
+  color: #fff !important;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  font-size: 2.1rem;
+  font-weight: 600;
 }
 
 .inline-richtext a,
@@ -846,6 +853,7 @@ summary::-webkit-details-marker {
 
 .title-wrapper--no-top-margin > .title {
   margin-top: 0;
+  color: #f7921f;
 }
 
 .subtitle {
@@ -1253,8 +1261,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
-  content: '';
-  position: absolute;
+  /* content: ''; */
+  /* position: absolute; */
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
   bottom: var(--buttons-border-width);
@@ -2629,7 +2637,7 @@ menu-drawer + .header__search {
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
-    display: inline-flex;
+    display: none;
   }
 
   .header:not(.header--top-center) > .header__search,
@@ -2705,8 +2713,9 @@ details[open] .modal-overlay::after {
 }
 
 @media screen and (min-width: 990px) {
-  .search-modal__form {
-    max-width: 74.2rem;
+  .search-modal__form-990 {
+    /* max-width: 74.2rem; */
+    width: 500px;
   }
 
   .search-modal__close-button {
@@ -3296,11 +3305,13 @@ details-disclosure > details {
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--fade-in {
     opacity: 1;
     animation: var(--animation-fade-in);
+    /* background-color: #fff9f4; */
   }
 
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
     animation: var(--animation-slide-in);
     animation-delay: calc(var(--animation-order) * 75ms);
+    /* color: #F7921F; */
   }
 
   .scroll-trigger.scroll-trigger--design-mode.animate--fade-in,

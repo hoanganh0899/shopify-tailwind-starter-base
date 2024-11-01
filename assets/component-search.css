@@ -5,6 +5,9 @@
 .search__button {
   right: var(--inputs-border-width);
   top: var(--inputs-border-width);
+  background-color: #fc6514;
+  border-radius: 50px;
+  color: #fff;
 }
 
 .reset__button {
@@ -45,7 +48,10 @@
 .search__button:not(:focus-visible):not(.focused),
 .reset__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  /* background-color: inherit; */
+  width: 36px;
+  height: 36px;
+  margin: 4px;
 }
 
 .search__button:hover .icon,

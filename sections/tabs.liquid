@@ -1,0 +1,124 @@
+{%  if section.blocks.size > 0 %}
+  <div class="tabs-section page-width">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+    {%  if section.settings.title != blank %}
+      <h2 class="h1">{{ section.settings.title }}</h2>
+    {%  endif  %}
+    <div id="tabs" class="tabs">
+      {%  assign tabContent = '' %}
+      <ul>
+      {%  for block in section.blocks %}
+       {%  assign collection = collections[block.settings.collection] %}
+        <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
+        {%  capture content  %}
+            <div id="tabs-{{ collection.id }}">
+              <ul class="grid product-grid grid--2-col-tablet-down  grid--4-col-desktop">
+               {%- for product in block.settings.collection.products limit: 4 -%}
+               <li class="grid__item scroll-trigger animate--slide-in">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id
+                  %}
+               </li>
+              {%- endfor -%}
+              </ul>
+              <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                  <a
+                    href="{{ collection.url }}"
+                    class="link underlined-link"
+                    aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: collection.title | escape }}"
+                  >
+                    {{ 'sections.featured_collection.view_all' | t }}
+                  </a>
+              </div>
+            </div>
+        {%  endcapture %}
+        {%  assign tabContent = tabContent | append: content %}
+      {%  endfor %}  
+      </ul>   
+      {{ tabContent }}
+    </div>  
+  </div> 
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  <style>
+    .tabs { background: none!important;border: none!important}
+    .tabs.ui-tabs .ui-tabs-nav {
+      background: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      border: none;
+      gap: 10px;
+    }
+    .tabs-section h2 {
+      text-align: center;
+    }
+    .tabs.ui-tabs .ui-tabs-nav li {
+      border: none;
+      background: none;
+    }
+    .tabs.ui-tabs .ui-tabs-nav li  a{
+      color: #0B2A4A;
+      /* padding: 5px 40px; */
+      border-radius: 50px;
+      border-color: #0B2A4A;
+      /* border: 1px solid; */
+      background: #7373731a;
+    }
+    .tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+      background: #fff;
+      border: 1px solid;
+      border-color: #F7921F;
+      color: #F7921F;
+    } 
+    .tabs.ui-tabs .ui-tabs-panel {
+      padding: 1em 0;
+    }
+  </style>
+{%  endif %}  
+{% schema %}
+  {
+    "name": "Tabs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "limit": 5,
+    
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      }
+    ]
+  
+    }
+  ],
+    "presets": [
+    {
+      "name": "Tabs",
+      "blocks": []
+    }
+  ]
+  }
+{% endschema %}
