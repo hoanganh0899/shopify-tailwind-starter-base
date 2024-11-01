@@ -99,3 +99,63 @@
   margin-top: 1rem;
   color: #fff;
 }
+
+.product-grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-grid-item .card__content {
+  margin-top: auto;
+}
+
+.price--on-sale .price__regular {
+  text-decoration: line-through;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.price__compare-at {
+  text-decoration: line-through;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: 0.9em;
+}
+
+.price__regular {
+  font-weight: bold;
+  color: #f7921f;
+}
+
+.card__media,
+.card__media img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card__media .media {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__media-secondary {
+  border-radius: 5px;
+}
+
+.collection-hero__title,
+.collection__title,
+.collection-title {
+  font-weight: 700;
+  color: #fc6514;
+}
+
+.collection-hero__header h1,
+.collection-header h1 {
+  font-weight: 700;
+  color: #fc6514;
+}
