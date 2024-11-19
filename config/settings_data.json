@@ -1,14 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
+    "logo": "shopify://shop_images/cocachoo_29aec68d-d023-45c6-a8a0-998ebc0ef6d6.png",
     "logo_width": 90,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -18,10 +19,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
-<<<<<<< HEAD
     "animations_reveal_on_scroll": true,
-=======
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -138,10 +136,7 @@
         }
       }
     },
-<<<<<<< HEAD
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -150,35 +145,17 @@
           "text": "#121212",
           "button": "#121212",
           "button_label": "#ffffff",
-=======
-    "color_schemes": {
-      "scheme-1": {
-        "settings": {
-          "background": "#FFFFFF",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#FFFFFF",
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "scheme-2": {
         "settings": {
-<<<<<<< HEAD
           "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
           "button_label": "#f3f3f3",
-=======
-          "background": "#F3F3F3",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#F3F3F3",
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -187,17 +164,10 @@
         "settings": {
           "background": "#242833",
           "background_gradient": "",
-<<<<<<< HEAD
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
-=======
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#000000",
-          "secondary_button_label": "#FFFFFF",
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
           "shadow": "#121212"
         }
       },
@@ -205,37 +175,21 @@
         "settings": {
           "background": "#121212",
           "background_gradient": "",
-<<<<<<< HEAD
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
-=======
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#121212",
-          "secondary_button_label": "#FFFFFF",
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
           "shadow": "#121212"
         }
       },
       "scheme-5": {
         "settings": {
-<<<<<<< HEAD
           "background": "#334fb4",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
-=======
-          "background": "#334FB4",
-          "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#334FB4",
-          "secondary_button_label": "#FFFFFF",
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
           "shadow": "#121212"
         }
       }

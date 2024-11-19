@@ -241,26 +241,19 @@
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate"></div>
       <div class="footer__column footer__column--info">
-        {% if section.settings.payment_enable %}
+        {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
-              <li class="list-payment__item">{% render 'icon-dmca' %}</li>
               <li class="list-payment__item">{% render 'icon-amazon-pay' %}</li>
               <li class="list-payment__item">{% render 'icon-american-express' %}</li>
-              <li class="list-payment__item">{% render 'icon-apple-pay' %}</li>
-              <li class="list-payment__item">{% render 'icon-diners-club' %}</li>
-              <li class="list-payment__item">{% render 'icon-discover' %}</li>
-              <li class="list-payment__item">{% render 'icon-meta-pay' %}</li>
-              <li class="list-payment__item">{% render 'icon-google-pay' %}</li>
+              <li class="list-payment__item">{% render 'icon-visa' %}</li>
               <li class="list-payment__item">{% render 'icon-mastercard' %}</li>
               <li class="list-payment__item">{% render 'icon-paypal' %}</li>
               <li class="list-payment__item">{% render 'icon-shopify-pay' %}</li>
-              <li class="list-payment__item">{% render 'icon-venmo' %}</li>
-              <li class="list-payment__item">{% render 'icon-visa' %}</li>
             </ul>
           </div>
-        {% endif %}
+        {%- endif -%}
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width">

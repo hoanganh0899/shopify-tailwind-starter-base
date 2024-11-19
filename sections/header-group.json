@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -25,10 +25,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
-<<<<<<< HEAD
       "disabled": true,
-=======
->>>>>>> 10b9dca1df4220f6e17add1a36308ed1f0649604
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
@@ -41,9 +38,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "top-left",
         "menu": "main-menu",
